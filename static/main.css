@@ -7,16 +7,25 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
-body{
-    background-color: black;
-    color: white;
-    background-position: center;
+a{
+    text-decoration: none;
+}
+
+::selection{
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+:root{
+    --color2 : rgb(208, 97, 0) ;
+    --second-background : rgb(255, 242, 231);
 }
 
 .first{
-    background-image: url('../media/background.jpg');
+    background-color: black;
+    /* background-image: url('../media/first-background.webp'); */
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -27,8 +36,12 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 40px 0px;
-    background-color: rgba(0, 0, 0, 0.400);
+    padding: 50px 0px;
+    user-select: none;
+}
+
+.menu-hamburger{
+    display: none;
 }
 
 .links-menu-bar a{
@@ -37,12 +50,132 @@ body{
     margin: 0 10px;
 }
 
+.links-menu-bar a:hover{
+    opacity: 70%;
+}
+
+.socials button{
+    background-color: var(--color2);
+    color: white;
+    padding: 5px;
+    font-weight: 800;
+    cursor: pointer;
+    margin: 0 2px;
+    padding: 10px;
+}
+
+.socials button:hover{
+    background-color: rgb(181, 84, 0);
+}
+
+
+.menu-heading{
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.dev-heading{
+    color: var(--color2);
+}
+
 .user-image{
-    width: 300px;
+    filter: saturate(0.25);
+    width: 20em;
+}
+
+.user-image:hover{
+    filter: saturate(0.50);
+    transition: 1s;
     border-radius: 10px;
 }
 
-.second{
+.user-image:active{
+    filter: saturate(1);
+}
+
+
+
+@media screen and (max-width:750px) {
+    .menu-with-hamburger-for-phone{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .links-menu-bar{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        top: 60px;
+        left : -100%;
+        position: absolute;
+        transition: 0.25s;
+        z-index: 1;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .links-menu-bar a{
+        padding: 30px;
+        font-size: 30px;
+    }
+    .menu-hamburger{
+        display: flex;
+        background-color: black;
+        color: white;
+        mix-blend-mode: difference;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        font-size: 30px;
+    }
+
+    .maha-menu{
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .socials{
+        padding: 40px 0;
+    }
+
+    .socials button{
+        background-color: rgba(255, 255, 255, 0.100);
+        font-weight: 400;
+        font-size: 15px;
+        padding: 6px;
+        border: 0.5px solid rgba(255, 255, 255, 0.500);
+        border-radius: 5px;
+    }
+
+    .socials button:hover{
+        background-color: rgba(255, 255, 255, 0.200);
+        color: white;
+    }
+}
+
+.second {
     height: 100vh;
-    background-color: rgb(255, 255, 245);
+    background-color: var(--second-background);
+}
+
+
+.go-up-arrow{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    mix-blend-mode: difference;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: large;
 }
