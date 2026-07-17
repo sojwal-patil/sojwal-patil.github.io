@@ -176,6 +176,7 @@ h2{
     color:white;
 }
 
+
 .skill-card:hover{
     transform:translateY(-8px);
     border-color: var(--color2);
