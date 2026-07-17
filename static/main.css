@@ -20,11 +20,7 @@ html{
 body{
     background-color: black;
     color: white;
-    transition: linear 1s;
-}
-
-::selection{
-    background-color: rgba(0, 0, 0, 0.500);
+    user-select: none;
 }
 
 :root{
