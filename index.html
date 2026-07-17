@@ -3,391 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO -->
-    <title>Sojwal Patil | CSE Student | Developer Portfolio</title>
-
-    <meta name="description" content="Portfolio of Sojwal Patil - CSE student, Django developer, and Generative AI enthusiast.">
-
-    <meta name="keywords" content="portfolio, django developer, generative ai, web developer, github projects">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-    <style>
-
-        /* Global */
-
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:'Poppins', sans-serif;
-        }
-
-        html{
-            scroll-behavior:smooth;
-        }
-
-        body{
-            background:#f4f6f9;
-            color:#333;
-        }
-
-        section{
-            padding:80px 10%;
-            min-height:100vh;
-        }
-
-        /* Navbar */
-
-        nav{
-            background:#0f172a;
-            position:fixed;
-            width:100%;
-            top:0;
-            z-index:1000;
-            padding:15px 0;
-        }
-
-        nav ul{
-            list-style:none;
-            display:flex;
-            justify-content:center;
-        }
-
-        nav ul li{
-            margin:0 20px;
-        }
-
-        nav ul li a{
-            color:white;
-            text-decoration:none;
-            font-weight:500;
-        }
-
-        nav ul li a:hover{
-            color:#38bdf8;
-        }
-
-        /* Home */
-
-        #home{
-            background:#020617;
-            color:white;
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
-            text-align:center;
-        }
-
-        #home h1{
-            font-size:3rem;
-        }
-
-        #home p{
-            margin:15px 0;
-            font-size:1.2rem;
-        }
-
-        .btn{
-            background:#38bdf8;
-            padding:10px 20px;
-            color:black;
-            border-radius:5px;
-            text-decoration:none;
-        }
-
-        .btn:hover{
-            background:#0ea5e9;
-        }
-
-        /* Section Headings */
-
-        h2{
-            text-align:center;
-            font-size:2.2rem;
-            margin-bottom:30px;
-        }
-
-        /* Skills */
-
-        .skills-grid{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-            gap:20px;
-        }
-
-        .skill-box{
-            background:white;
-            padding:20px;
-            border-radius:8px;
-            text-align:center;
-            box-shadow:0 0 10px rgba(0,0,0,0.1);
-        }
-
-        /* Projects */
-
-        .projects-grid{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:25px;
-        }
-
-        .project-card{
-            background:white;
-            padding:20px;
-            border-radius:8px;
-            box-shadow:0 0 10px rgba(0,0,0,0.1);
-        }
-
-        .project-card h3{
-            margin-bottom:10px;
-        }
-
-        .project-card a{
-            text-decoration:none;
-            color:#0284c7;
-            font-weight:500;
-        }
-
-        /* Contact */
-
-        form{
-            max-width:500px;
-            margin:auto;
-            background:white;
-            padding:25px;
-            border-radius:8px;
-            box-shadow:0 0 10px rgba(0,0,0,0.1);
-        }
-
-        input, textarea{
-            width:100%;
-            padding:10px;
-            margin:10px 0;
-            border:1px solid #ccc;
-            border-radius:5px;
-        }
-
-        button{
-            width:100%;
-            padding:10px;
-            background:#38bdf8;
-            border:none;
-            cursor:pointer;
-        }
-
-        button:hover{
-            background:#0ea5e9;
-        }
-
-        /* Footer */
-
-        footer{
-            background:#0f172a;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
-
-        /* Responsive */
-
-        @media(max-width:768px){
-
-            nav ul{
-                flex-direction:column;
-            }
-
-            nav ul li{
-                margin:8px 0;
-            }
-
-            #home h1{
-                font-size:2.2rem;
-            }
-        }
-
-    </style>
+    <title>Sojwal Patil | Developer</title>
+    <script src="https://kit.fontawesome.com/96d552640e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+    <link rel="stylesheet" href="static/main.css">
 </head>
-
 <body>
+    <!-- First Start -->
 
-<!-- Navbar -->
+        <nav class="maha-menu">
+                <div class="menu-with-hamburger-for-phone">     
 
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+                    <a href=""><h1 class="menu-heading">Sojwal.<span class="dev-heading">Dev</span> </h1></a>
+                    <button class="menu-hamburger"><i class="fa-solid fa-bars"></i></button>
+            
+                </div>
 
-<!-- Home -->
+                <div class="links-menu-bar">
+                    <a href="">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact" style="color: rgb(255, 219, 189);"> Contact</a>
+                </div>
 
-<section id="home">
+                <div class="socials">
+                    <a href="https://github.com/sojwal-patil"><button class="github"><i class="fa-brands fa-github"></i> Github</button></a>
+                    <a href="https://www.linkedin.com/in/sojwal-patil/"><button class="linkedin"><i class="fa-brands fa-linkedin"></i> Linkedin</button></a>
+                    <a href="mailto:sojwalpatil2006@gmail.com"><button class="email"><i class="fa-solid fa-envelope"></i> Email</button></a>
+                </div>
+        </nav>
 
-    <h1>Sojwal Patil</h1>
+        <!-- Main Content Area  -->
 
-    <p>CSE Student | Django Developer | Generative AI Enthusiast</p>
+        <div class="content-area">
+            <div class="image-text-wrapper">
+                <img src="media/sojwal-patil.png" alt="Sojwal Patil" class="user-image">
+                <div class="text-area-1">
+                    <h2 class="hero-sojwal-name">Hi, I'am <span class="sojwal-name">Sojwal Patil</span></h2> <br>
+                    <p style="line-height: 30px;padding-top: 20px;color: rgba(255, 255, 255, 0.900);"><span style="font-weight: 800;color: white;">Full-Stack Developer</span> <br>
 
-    <p>Building clean, scalable, and practical software solutions.</p>
+                   who enjoys building modern, responsive, and scalable web applications. I love transforming ideas into real-world solutions by combining intuitive frontend design with powerful backend development. <br> <br>
+                   
+                   <p>Open To Work : <a href="#contact" style="color: white;text-decoration: underline;">Let's talk.</a></p> 
+                </p>
+                </div>
+            </div>
+        </div>
 
-    <a href="#contact" class="btn">Contact Me</a>
 
-</section>
+        <div class="content-area" style="padding-top: 50px;">
+            
+            <div class="skills-container" id="skills">
 
-<!-- About -->
+                <div class="skill-card">
+                    <i class="devicon-html5-plain colored"></i>
+                    <span>HTML5</span>
+                </div>
 
-<section id="about">
+                <div class="skill-card">
+                    <i class="devicon-css3-plain colored"></i>
+                    <span>CSS3</span>
+                </div>
 
-    <h2>About Me</h2>
+                <div class="skill-card">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <span>JavaScript</span>
+                </div>
 
-    <p>
-        I am a Computer Science Engineering student with strong interest
-        in Web Development, Django, and Generative AI.
-        I enjoy building real-world projects and learning modern technologies.
-    </p>
+                <div class="skill-card">
+                    <i class="devicon-react-original colored"></i>
+                    <span>React</span>
+                </div>
 
-    <br>
+                <div class="skill-card">
+                    <i class="devicon-python-plain colored"></i>
+                    <span>Python</span>
+                </div>
 
-    <p>
-        <strong>Skills Focus:</strong> Backend Development, UI Design, AI Integration
-    </p>
+                <div class="skill-card">
+                    <i class="devicon-django-plain"></i>
+                    <span>Django</span>
+                </div>
 
-</section>
+                <div class="skill-card">
+                    <i class="devicon-postgresql-plain colored"></i>
+                    <span>PostgreSQL</span>
+                </div>
 
-<!-- Skills -->
+                <div class="skill-card">
+                    <i class="devicon-tailwindcss-original colored"></i>
+                    <span>Tailwind CSS</span>
+                </div>
 
-<section id="skills">
+                <div class="skill-card">
+                    <i class="devicon-git-plain colored"></i>
+                    <span>Git</span>
+                </div>
 
-    <h2>Technical Skills</h2>
+                <div class="skill-card">
+                    <i class="devicon-github-original"></i>
+                    <span>GitHub</span>
+                </div>
 
-    <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="devicon-vercel-original"></i>
+                    <span>Vercel</span>
+                </div>
 
-        <div class="skill-box">HTML</div>
-        <div class="skill-box">CSS</div>
-        <div class="skill-box">Figma</div>
-        <div class="skill-box">Django</div>
-        <div class="skill-box">Generative AI</div>
-        <div class="skill-box">Git</div>
-        <div class="skill-box">GitHub</div>
+                <div class="skill-card">
+                    <i class="devicon-netlify-plain"></i>
+                    <span>Netlify</span>
+                </div>
 
-    </div>
 
-</section>
+            </div>
 
-<!-- Projects -->
+        </div>
 
-<section id="projects">
+        <br><br><br><br>
 
-    <h2>GitHub Projects</h2>
+        <div style="width: 70%;margin: auto;">
+            <section id="projects">
+                <h2 style="text-align: center;">Latest Projects</h2> <br> <br> 
 
-    <div class="projects-grid" id="projects-container">
+                <div id="github-projects" class="projects-grid">
+                    <p>Loading projects...</p>
+                </div>
+            </section>
+        </div>
+    <!-- First End  -->
 
-        <!-- Auto Loaded -->
-
-    </div>
-
-</section>
-
-<!-- Contact -->
-
+    <div style="width: 70%;margin: auto;">
 <section id="contact">
 
-    <h2>Contact Me</h2>
+    <h2 class="section-title">Get In Touch</h2>
 
-    <form onsubmit="sendMessage(event)">
-
-        <input type="text" placeholder="Name" required>
-
-        <input type="email" placeholder="Email" required>
-
-        <textarea rows="5" placeholder="Message" required></textarea>
-
-        <button type="submit">Send</button>
-
-    </form>
-
-    <p style="text-align:center;margin-top:20px;">
-
-        Email: sojwalpatil2006@gmail.com <br>
-        GitHub: github.com/sojwal-patil <br>
-        LinkedIn: https://www.linkedin.com/in/sojwal-patil/
-
+    <p class="contact-text">
+        I'm currently looking for internships, freelance work, and exciting
+        opportunities. Feel free to reach out through any of the platforms below.
     </p>
 
+    <div class="contact-grid">
+
+        <a href="mailto:sojwalpatil2006@gmail.com" class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Email</h3>
+            <span>sojwalpatil2006@gmail.com</span>
+        </a>
+
+        <a href="https://github.com/sojwal-patil" target="_blank" class="contact-card">
+            <i class="fa-brands fa-github"></i>
+            <h3>GitHub</h3>
+            <span>@sojwal-patil</span>
+        </a>
+
+        <a href="https://linkedin.com/in/sojwal-patil" target="_blank" class="contact-card">
+            <i class="fa-brands fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+            <span>@sojwal-patil</span>
+        </a>
+
+    </div>
+
 </section>
+    </div>
 
-<!-- Footer -->
+    <a href="">
+        <button class="go-up-arrow">
+             <i class="fa-solid fa-arrow-up "></i>
+            </button>
+        </a>
 
-<footer>
-
-    <p>© 2026 Sojwal Patil | Portfolio Website</p>
-
-</footer>
-
-
-<!-- JavaScript -->
-
-<script>
-
-    /* Load GitHub Repositories */
-
-    const username = "sojwal-patil";
-    const apiURL = `https://api.github.com/users/${username}/repos`;
-
-    fetch(apiURL)
-        .then(response => response.json())
-        .then(data => {
-
-            const container = document.getElementById("projects-container");
-
-            data.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
-
-            data.forEach(repo => {
-
-                if(repo.fork) return;
-
-                const card = document.createElement("div");
-                card.className = "project-card";
-
-                card.innerHTML = `
-                    <h3>${repo.name}</h3>
-
-                    <p>${repo.description || "No description available."}</p>
-
-                    <p><strong>Language:</strong> ${repo.language || "Multiple"}</p>
-
-                    <a href="${repo.html_url}" target="_blank">GitHub Repo</a>
-                `;
-
-                container.appendChild(card);
-            });
-
-        })
-        .catch(error => {
-
-            console.log(error);
-
-            document.getElementById("projects-container")
-                .innerHTML = "<p>Unable to load projects.</p>";
-        });
+        <p class="copyright-text">Thanks for scrolling all the way down.</p>
+        <p class="copyright-text">© 2026 Sojwal Patil</p> <br>
 
 
-    /* Contact Message */
-
-    function sendMessage(e){
-
-        e.preventDefault();
-
-        alert("Message sent successfully!");
-
-    }
-
-</script>
+    <script src="static/script.js"></script>
 
 </body>
 </html>
