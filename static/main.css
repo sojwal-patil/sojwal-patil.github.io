@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
- 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
 
 *{
     font-family: Manrope;
@@ -14,6 +13,16 @@ a{
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    color: white;
+    transition: linear 1s;
+}
+
 ::selection{
     background-color: rgba(0, 0, 0, 0.500);
 }
@@ -23,13 +32,19 @@ a{
     --second-background : rgb(255, 242, 231);
 }
 
+h2{
+    font-family: Montserrat;
+}
+
 .first{
     background-color: black;
     /* background-image: url('../media/first-background.webp'); */
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: max-content;
+    color: white;
+    padding-bottom: 20px;
 }
 
 .maha-menu{
@@ -72,7 +87,6 @@ a{
 .menu-heading{
     color: white;
     font-size: 25px;
-    letter-spacing: 2px;
 }
 
 .dev-heading{
@@ -81,22 +95,160 @@ a{
 
 .user-image{
     filter: saturate(0.25);
-    width: 20em;
+    width: 19em;
+    height: 19em;
+    border-radius: 10px;
 }
 
 .user-image:hover{
     filter: saturate(0.50);
     transition: 1s;
-    border-radius: 10px;
 }
 
 .user-image:active{
     filter: saturate(1);
 }
 
+.content-area{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto
+}
 
+.image-text-wrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.text-area-1{
+    margin: 10px 30px;
+}
+
+.hero-sojwal-name{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.sojwal-name{
+    font-family: Montserrat;
+    text-decoration-line: underline;
+    text-decoration-color: var(--color2);
+    text-decoration-thickness: 3px;
+    font-weight: 600;
+}
+
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    margin-top:40px;
+}
+
+.skill-card{
+    width:120px;
+    height:120px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    background:#111;
+    border:1px solid #2b2b2b;
+    border-radius:15px;
+
+    transition:.3s ease;
+    cursor:pointer;
+    filter: saturate(0);
+}
+
+.skill-card i{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.skill-card span{
+    font-size:15px;
+    font-weight:600;
+    color:white;
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+    border-color:#ff9800;
+    box-shadow:0 10px 25px rgba(255,152,0,.15);
+    filter: saturate(1);
+}
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#111;
+    border:1px solid #2d2d2d;
+    border-radius:16px;
+    padding:25px;
+
+    height:300px;
+
+    display:flex;
+    flex-direction:column;
+
+    transition:.3s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    border-color:#ff9800;
+    box-shadow:0 10px 25px rgba(255,152,0,.15);
+}
+
+.project-card h3{
+    font-size:1.2rem;
+    margin-bottom:12px;
+
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.project-card p{
+    color:#bdbdbd;
+    margin-bottom:20px;
+    min-height:24px;
+}
+
+.project-info{
+    display:flex;
+    justify-content:space-between;
+    color:#999;
+    font-size:.9rem;
+
+    margin-top:auto;
+    margin-bottom:18px;
+}
+
+.project-card a{
+    color:#ff9800;
+    text-decoration:none;
+    font-weight:600;
+    transition:.2s;
+}
+
+.project-card a:hover{
+    opacity:.8;
+}
 
 @media screen and (max-width:750px) {
+    .first{
+        height: max-content;
+    }
     .menu-with-hamburger-for-phone{
         display: flex;
         justify-content: space-between;
@@ -139,6 +291,7 @@ a{
         flex-direction: column;
         width: 100%;
         padding: 20px;
+        padding-bottom: 0;
     }
 
     .socials{
@@ -160,11 +313,27 @@ a{
     }
 }
 
-.second {
-    height: 100vh;
-    background-color: var(--second-background);
-}
 
+@media screen and (max-width:800px) {
+        .content-area{
+        width: 100%;
+    }
+
+    .user-image{
+        margin: auto;
+    }
+
+    .image-text-wrapper{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+       align-content: center;
+    }
+
+    .text-area-1{
+        text-align: center;
+    }
+}
 
 .go-up-arrow{
     position: fixed;
