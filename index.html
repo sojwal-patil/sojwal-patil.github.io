@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sojwal — Building</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      font-family: "DM Sans", sans-serif;
+    }
+
+    .mono {
+      font-family: "JetBrains Mono", monospace;
+    }
+
+    .grid-bg {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: linear-gradient(to bottom, black, transparent 80%);
+    }
+
+    .glow {
+      box-shadow:
+        0 0 80px rgba(255,255,255,0.035),
+        inset 0 0 40px rgba(255,255,255,0.015);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen overflow-hidden bg-[#090909] text-white antialiased">
+
+  <!-- Background -->
+  <div class="pointer-events-none fixed inset-0 grid-bg"></div>
+
+  <!-- Subtle center glow -->
+  <div
+    class="pointer-events-none fixed left-1/2 top-1/2 h-[500px] w-[500px]
+           -translate-x-1/2 -translate-y-1/2 rounded-full
+           bg-white/[0.015] blur-3xl"
+  ></div>
+
+  <main class="relative flex min-h-screen flex-col px-6">
+
+    <!-- Header -->
+    <header class="flex items-center justify-between py-7 sm:py-9">
+      <a
+        href="/"
+        class="mono text-sm font-medium tracking-tight text-zinc-200"
+      >
+        sojwal.dev
+      </a>
+
+      <div class="mono flex items-center gap-2 text-[11px] text-zinc-600">
+        <span class="h-1.5 w-1.5 rounded-full bg-zinc-500"></span>
+        BUILDING
+      </div>
+    </header>
+
+    <!-- Content -->
+    <section class="flex flex-1 items-center justify-center">
+      <div class="w-full max-w-3xl">
+
+        <div
+          class="glow rounded-3xl border border-white/[0.07]
+                 bg-white/[0.015] px-7 py-12 sm:px-12 sm:py-16"
+        >
+
+          <!-- Status -->
+          <div class="mono mb-8 flex items-center gap-3 text-xs text-zinc-500">
+            <span class="h-px w-8 bg-zinc-700"></span>
+            CURRENT STATUS
+          </div>
+
+          <!-- Heading -->
+          <h1
+            class="max-w-2xl text-4xl font-medium leading-[1.08]
+                   tracking-[-0.04em] text-zinc-100
+                   sm:text-6xl"
+          >
+            Something new<br />
+            is being built.
+          </h1>
+
+          <!-- Description -->
+          <p
+            class="mt-7 max-w-xl text-base leading-7 text-zinc-500
+                   sm:text-lg"
+          >
+            I'm putting together a new space for my work, projects,
+            experiments and everything I'm building.
+          </p>
+
+          <!-- Divider -->
+          <div class="my-10 h-px w-full bg-white/[0.06]"></div>
+
+          <!-- Links -->
+          <div class="flex flex-wrap items-center gap-3">
+
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group mono inline-flex items-center gap-2 rounded-lg
+                     border border-white/[0.08] bg-white/[0.025]
+                     px-4 py-2.5 text-xs text-zinc-400
+                     transition duration-200 hover:border-white/[0.16]
+                     hover:bg-white/[0.05] hover:text-white"
+            >
+              GitHub
+              <span
+                class="transition-transform duration-200
+                       group-hover:translate-x-0.5"
+              >
+                ↗
+              </span>
+            </a>
+
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group mono inline-flex items-center gap-2 rounded-lg
+                     border border-white/[0.08] bg-white/[0.025]
+                     px-4 py-2.5 text-xs text-zinc-400
+                     transition duration-200 hover:border-white/[0.16]
+                     hover:bg-white/[0.05] hover:text-white"
+            >
+              LinkedIn
+              <span
+                class="transition-transform duration-200
+                       group-hover:translate-x-0.5"
+              >
+                ↗
+              </span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="flex items-center justify-between py-7 text-[11px]
+             text-zinc-700 mono"
+    >
+      <span>© 2026</span>
+      <span>More soon.</span>
+    </footer>
+
+  </main>
+
+</body>
+</html>
